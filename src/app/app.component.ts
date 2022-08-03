@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebUI';
+
+  items = [
+    { title : 'Home', icon : 'home',  link: '/home'},
+    { title : 'Shop', icon : 'info-outline',  link: '/shop'}
+  ]
 }
