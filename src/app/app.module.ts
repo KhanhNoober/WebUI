@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbSidebarService, NbButtonModule, NbMenuModule, NbTabsetModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HeaderComponent } from './Components/header/header.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HeaderComponent } from './Components/header/header.component';
     NbButtonModule,
     NbMenuModule.forRoot(),
     NbTabsetModule,
+    HttpClientModule
   ],
   providers: [
     NbSidebarService,
