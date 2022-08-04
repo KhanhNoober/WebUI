@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { NbRouteTabsetModule, NbTabsetModule } from '@nebular/theme';
+import { NbTabsetModule } from '@nebular/theme';
+import { NewsModule } from './pages/news/news.module';
+import { AboutModule } from './pages/about/about.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     NbTabsetModule,
-    NbRouteTabsetModule
+    NewsModule,
+    AboutModule
   ]
 })
 export class HomeModule { }

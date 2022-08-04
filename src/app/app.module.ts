@@ -8,6 +8,7 @@ import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbSidebarService, NbBut
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HeaderComponent } from './Components/header/header.component';
 import { HttpClientModule } from '@angular/common/http'
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http'
     NbButtonModule,
     NbMenuModule.forRoot(),
     NbTabsetModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     NbSidebarService,

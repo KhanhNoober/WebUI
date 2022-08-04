@@ -14,6 +14,9 @@ import { NbCardModule } from '@nebular/theme';
     CommonModule,
     NewsRoutingModule,
     NbCardModule
+  ],
+  exports: [
+    NewsComponent
   ]
 })
 export class NewsModule { }
